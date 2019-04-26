@@ -12,7 +12,7 @@ class Bot(commands.AutoShardedBot):
         super().__init__(*args, **kwargs)
 
     async def update_activity(self):
-        await self.change_presence(status=discord.Status.offline)
+        await self.change_presence(status=discord.Status.online)
 
 
     async def load_plugins(self):
