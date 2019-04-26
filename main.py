@@ -4,12 +4,10 @@ from util import Bot, Handlers
 import os
 
 if "data.json" in os.listdir('./'):
-    settings = Handlers.JSON.read()["settings"]
-    token = settings["token"]
+    config = Handlers.JSON.read()["config"]
+    token = config["token"]
 else:
     token = os.getenv('token')
-    if token == None:
-        token = str(input("Please paste bot's token here: "))
 
 def get_pre(bot, message):
     id = bot.user.id

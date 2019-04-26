@@ -1,7 +1,5 @@
 import discord
 from discord.ext import commands
-import os
-import time
 from util import Handlers
 
 class AntiInvisible(commands.Cog, name="AntiInvisible"):
@@ -11,8 +9,8 @@ class AntiInvisible(commands.Cog, name="AntiInvisible"):
     @commands.Cog.listener()
     async def on_member_update(self, before, after):
         # getting the guild and the role
-        guild = discord.utils.get(self.bot.guilds, id=Handlers.JSON.read()["settings"]["guild_id"])
-        role = discord.utils.get(guild.roles, id=Handlers.JSON.read()["settings"]["role_id"])
+        guild = discord.utils.get(self.bot.guilds, id=Handlers.JSON.read()["config"]["guild_id"])
+        role = guild.get_role(Handlers.JSON.read()["config"]["invisible_role_id"])
 
         # is the member in the correct guild or a bot
         if after.bot:

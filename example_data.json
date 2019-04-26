@@ -1,0 +1,9 @@
+{
+    "config": {
+        "token": "token",
+        "invisible_role_id": 0,
+        "guild_id": 0,
+        "typing_role_id": 0,
+        "typer_role_id": 0
+    }
+}

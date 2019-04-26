@@ -16,7 +16,7 @@ class Bot(commands.AutoShardedBot):
 
 
     async def load_plugins(self):
-        plugins = ["owner", "antiinvisible"]
+        plugins = ["owner", "antiinvisible", "typingrole"]
         for plugin in plugins:
             self.load_extension(f"plugins.{plugin}")
             print(f"Loaded {plugin}.")
@@ -25,8 +25,7 @@ class Bot(commands.AutoShardedBot):
 
     async def on_ready(self):
         print("Starting...")
-        Handlers.JSON.settings_setup(self)
         await self.load_plugins()
         await self.update_activity()
         print(f"Logged in as {self.user} ({self.user.id})")
-        print("Created by:\n166630166825664512")
+        print("Created by: Antonio32A (166630166825664512)")
