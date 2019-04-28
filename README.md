@@ -20,7 +20,7 @@ Made by: Antonio32A
     ```
     py main.py
     ```
-### Linux/OS X ###
+### Ubuntu/Debian/Mint ###
 1. Clone the repository (`git clone https://github.com/Antonio32A/Disconnected.git`) or download the ZIP file and extract it.
 2. Navigate to the files using `cd path/to/extracted/files`
 3. Install the latest version of python by executing these commands in the terminal:
