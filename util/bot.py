@@ -1,10 +1,5 @@
 import discord
 from discord.ext import commands
-import os
-import json
-import asyncio
-import aiohttp
-import random
 from util.handlers import Handlers
 
 class Bot(commands.AutoShardedBot):
