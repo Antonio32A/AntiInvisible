@@ -1,10 +1,5 @@
 import discord
 from discord.ext import commands
-import os
-import json
-import asyncio
-import aiohttp
-import random
 from util.handlers import Handlers
 
 class Bot(commands.AutoShardedBot):
@@ -28,4 +23,4 @@ class Bot(commands.AutoShardedBot):
         await self.load_plugins()
         await self.update_activity()
         print(f"Logged in as {self.user} ({self.user.id})")
-        print("Created by: Antonio32A (166630166825664512)")
+        print("Created by: Antonio32A (https://github.com/Antonio32A)")

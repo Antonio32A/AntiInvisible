@@ -1,8 +1,5 @@
 import json
 import os
-import discord
-import asyncio
-
 class Handlers:
     class JSON:
         def __init__(self, bot):
